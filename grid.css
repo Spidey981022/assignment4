@@ -1,0 +1,108 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+#main-section{
+    width: 100vw;
+    height: 100vh;
+    padding: 20px;
+    background: #131314;
+    background: linear-gradient(351deg, rgba(19, 19, 20, 1) 75%, rgba(161, 161, 161, 1) 100%, rgba(255, 255, 255, 1) 23%);
+}
+#grid-container{
+    min-height: 95vh;
+    min-width: 90vw;
+    gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(15,1fr);
+    grid-template-rows: repeat(12,1fr);
+    grid-template-areas:
+    "a a a a a a b b b c c c d e f"
+    "a a a a a a b b b c c c g h i"
+    "a a a a a a b b b c c c j j j"
+    "a a a a a a b b b c c c j j j"
+    "k k k l l l m m m m m m j j j"
+    "k k k l l l m m m m m m j j j"
+    "k k k l l l m m m m m m n n n"
+    "k k k l l l m m m m m m n n n"
+    "o o o o o o o o o p p p p p p"
+    "o o o o o o o o o p p p p p p"
+    "o o o o o o o o o p p p p p p"
+    "o o o o o o o o o p p p p p p";
+}
+.box{
+    background-color: transparent;
+    border-radius: 10px;
+    border: none;
+    box-shadow: black 0px 2px 8px;
+    color: white
+}
+.box:hover{
+
+}
+.a{
+    grid-area: a;
+}
+.b{
+    grid-area: b;
+    /*overflow: hidden;*/
+}
+.c{
+    grid-area: c;
+}
+.d{
+    grid-area: d;
+}
+.f{
+    grid-area: f;
+}
+.g{
+    grid-area: g;
+}
+.h{
+    grid-area: h;
+}
+.i{
+    grid-area: i;
+}
+.j{
+    grid-area: j;
+}
+.k{
+    grid-area: k;
+}
+.l{
+    grid-area: l;
+}
+.m{
+    grid-area: m;
+    overflow: hidden;
+    aspect-ratio: 16/6.3;
+}
+.n{
+    grid-area: n;
+}
+.o{
+    grid-area: o;
+}
+.p{
+    grid-area: p;
+}
+.c img,
+.b img,
+.k img,
+.m img{
+    border-radius: 10px;
+    height: 100%;
+    width: 100%;
+    /*transform: scale(1.5);*/
+    object-fit: cover;
+    display: block;
+}
+.d, .e, .f, .g, .h, .i{
+    font-size: 22pt;
+    display: grid;
+    place-items: center;
+    opacity: 0.9;
+}
